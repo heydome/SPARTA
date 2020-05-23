@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀짝 클릭 사이트</title>
+</head>
+
+<script>
+    let num = 0;
+
+    function odd_even() {        
+        num += 1 ;        
+        if (num%2 == 1) {
+            alert("홀홀홀");
+        } else {
+            alert("짝짝짝");
+        }
+    }
+</script>
+
+<body>
+    <p>홀짝 Alert을 만들어보자</p>
+    <button onclick="odd_even()">홀짝 버튼</button>
+
+</body>
+
+</html>

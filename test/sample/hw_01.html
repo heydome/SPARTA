@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+
+  <title>양초구매 페이지</title>
+  <style>
+.font_article {
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+    .card {
+      width: 400px;
+    }
+
+    .card_frame {
+      width: 500px;
+      margin: auto;
+    }
+
+    .btncenter {
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%
+    }
+
+    .card-title {
+font-size: 30px;
+    }
+  </style>
+
+  <script>
+    function order_alert() {
+      alert("주문이 완료되었습니다.")
+    }
+  </script>
+</head>
+
+<body>
+  <div class="card_frame">
+
+    <div class="card mb-3 card_frame font_article">
+      <img src="https://t1.daumcdn.net/cfile/tistory/997E2C395B988B3619" class="card-img-top" alt="양초이미지">
+      <div class="card-body">
+        
+          <p class="card-title">명상 양초세트<span>(가격 50,000원/개)</span></p>
+        
+
+        <p class="card-title">이상품은 아주 좋으니깐 빨리 사지 않으면 품절됩니다!</p>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+      </div>
+      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">수량</label>
+      </div>
+      <select class="custom-select" placeholder="--수량을 선택하세요--" id="inputGroupSelect01">
+        <option selected>--수량을 선택하세요--</option>
+        <option value="1">1개</option>
+        <option value="2">10개</option>
+        <option value="3">100개</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">주소</span>
+      </div>
+      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">전화번호</span>
+      </div>
+      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <button onclick="order_alert()" type="button" class="btn btn-primary btncenter">주문하기</button>
+  </div>
+
+</body>
+
+</html>

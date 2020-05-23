@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 계산기</title>
+
+    <script>
+        function add(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var sum = n1+n2;
+            document.getElementById("result").value = sum;
+        }
+
+        function sub(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var sub = n1-n2;
+            document.getElementById("result").value = sub;
+        }
+
+        function mul(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var mul = n1*n2;
+            document.getElementById("result").value = mul;
+        }
+
+        function div(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var div = n1/n2;
+            document.getElementById("result").value = div;
+        }
+    </script>
+    <!-- <style>
+        /* #result {
+            border: 1px bold black;
+        } */
+    </style> -->
+
+</head>
+<body>
+    
+    <h1>자바스크립트 계산기</h1>
+    <div>num1<input type="number" id="num1" size="10"></input></div>
+    <div>num2<input type="number" id="num2"size="10"></input></div>
+    <div style width= 100%>
+    <input type="button" value="+" onclick="add()"></input>
+    <input type="button" value="-" onclick="sub()"></input>
+    <input type="button" value="*" onclick="mul()"></input>
+    <input type="button" value="/" onclick="div()"></input>
+    </div>
+    <div>result<input type="number" id="result" ></input></div>
+
+
+</body>
+</html>
