@@ -20,4 +20,5 @@ for song in songs:
     if a_tag is not None:
         rank = song.select_one('td.number').text[0:3].strip()
         title = a_tag.text.strip()                                    
-        name = song.select_one('a.artist.ellipsis').text            
+        name = song.select_one('a.artist.ellipsis').text                # td 태그 사이의 텍스트를 가져오기
+        print(rank,title,name)
